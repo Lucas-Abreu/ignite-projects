@@ -1,5 +1,5 @@
 defmodule ListLength do
-  def start(list), do: count(list, 0)
+  def call(list), do: count(list, 0)
 
   defp count([], acc) do
     acc
