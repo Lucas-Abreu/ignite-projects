@@ -1,9 +1,11 @@
 defmodule ListLength do
-  def count([], acc) do
+  def start(list), do: count(list, 0)
+
+  defp count([], acc) do
     acc
   end
 
-  def count([_head | tail], acc) do
+  defp count([_head | tail], acc) do
     acc = acc + 1
     count(tail, acc)
   end
